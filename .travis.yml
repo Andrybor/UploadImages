@@ -1,9 +1,10 @@
-language: csharp  
-sudo: required  
-dist: trusty  
+language: csharp
 mono: none
-dotnet: 2.2-preview2-006497
-before_script:
-  - dotnet restore
-script:  
-  - dotnet test ./UploadImageAPI.Tests.UnitTests -c Release -f netcoreapp2.2
+dotnet: 2.2
+
+install:
+- dotnet restore
+
+script:
+ - dotnet build
+ - dotnet test ./UploadImageAPI/Tests/UploadImageAPI.UnitTests.csproj
