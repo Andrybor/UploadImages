@@ -3,5 +3,5 @@ mono: none
 dotnet: 2.2
 script:
   - dotnet restore
-  - dotnet build ./UploadImageAPI/
+  - dotnet build 
   - dotnet test ./UploadImageAPI.UnitTests/
