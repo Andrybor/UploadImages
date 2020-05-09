@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System;
+using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -11,10 +13,6 @@ namespace UploadImageAPI.Controllers
     [ApiController]
     public class ImagesController : ControllerBase
     {
-        // just for example.
-        private static readonly string UploadImagePath =
-            "D:\\Users\\Andrii.Borysenko\\source\\repos\\UploadImageAPI\\UploadImageAPI\\Images\\";
-
         private readonly IUploadImageService _imageService;
 
         public ImagesController(IUploadImageService imageService)
@@ -25,11 +23,14 @@ namespace UploadImageAPI.Controllers
         [HttpPost("UploadImage")]
         public async Task<IActionResult> UploadImage([FromForm] IFormCollection collection)
         {
+            var workingDirectory = Environment.CurrentDirectory;
+            var projectDirectory = Directory.GetParent(workingDirectory)?.Parent?.Parent?.Parent?.FullName + @"/UploadImageAPI/Images";
+
             var uploadedFiles = collection.Files;
             if (uploadedFiles.Count > 0)
             {
                 var isSucceed = await uploadedFiles.ToList()
-                    .ForEachAsync(async i => await _imageService.UploadImage(i, UploadImagePath));
+                    .ForEachAsync(async i => await _imageService.UploadImage(i, projectDirectory));
                 return Ok(isSucceed);
             }
 
