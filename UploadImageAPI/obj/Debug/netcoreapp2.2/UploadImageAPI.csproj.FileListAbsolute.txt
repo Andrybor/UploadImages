@@ -3,7 +3,6 @@ D:\Users\Andrii.Borysenko\source\repos\UploadImageAPI\UploadImageAPI\bin\Debug\n
 D:\Users\Andrii.Borysenko\source\repos\UploadImageAPI\UploadImageAPI\bin\Debug\netcoreapp2.2\UploadImageAPI.runtimeconfig.dev.json
 D:\Users\Andrii.Borysenko\source\repos\UploadImageAPI\UploadImageAPI\bin\Debug\netcoreapp2.2\UploadImageAPI.dll
 D:\Users\Andrii.Borysenko\source\repos\UploadImageAPI\UploadImageAPI\bin\Debug\netcoreapp2.2\UploadImageAPI.pdb
-D:\Users\Andrii.Borysenko\source\repos\UploadImageAPI\UploadImageAPI\obj\Debug\netcoreapp2.2\UploadImageAPI.csprojAssemblyReference.cache
 D:\Users\Andrii.Borysenko\source\repos\UploadImageAPI\UploadImageAPI\obj\Debug\netcoreapp2.2\UploadImageAPI.csproj.CoreCompileInputs.cache
 D:\Users\Andrii.Borysenko\source\repos\UploadImageAPI\UploadImageAPI\obj\Debug\netcoreapp2.2\UploadImageAPI.RazorAssemblyInfo.cache
 D:\Users\Andrii.Borysenko\source\repos\UploadImageAPI\UploadImageAPI\obj\Debug\netcoreapp2.2\UploadImageAPI.RazorAssemblyInfo.cs

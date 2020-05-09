@@ -21,15 +21,14 @@ namespace UploadImageAPI.UnitTests
             var imageService = new UploadImageService(imageWriter);
             var controller = new ImagesController(imageService);
             IActionResult result;
-
             // act
-            using (var stream = File.OpenRead(Directory.GetCurrentDirectory() + "\\Resources\\test.png"))
+            using (var stream = File.OpenRead(Directory.GetCurrentDirectory() + @"/Resources/test.png"))
             {
                 result = await controller.UploadImage(new FormCollection(new Dictionary<string, StringValues>(),
                     new FormFileCollection
                     {
                         new FormFile(stream, 0, stream.Length, null,
-                            Path.GetFileName(Directory.GetCurrentDirectory() + "\\Resources\\test.png"))
+                            Path.GetFileName(Directory.GetCurrentDirectory() + @"/Resources/test.png"))
                         {
                             Headers = new HeaderDictionary(),
                             ContentType = "multipart/form-data"

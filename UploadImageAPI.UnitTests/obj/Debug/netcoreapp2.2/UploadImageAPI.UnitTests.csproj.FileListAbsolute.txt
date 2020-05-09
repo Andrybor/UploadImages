@@ -20,3 +20,4 @@ D:\Users\Andrii.Borysenko\source\repos\UploadImageAPI\UploadImageAPI.UnitTests\o
 D:\Users\Andrii.Borysenko\source\repos\UploadImageAPI\UploadImageAPI.UnitTests\obj\Debug\netcoreapp2.2\UploadImageAPI.UnitTests.csproj.CopyComplete
 D:\Users\Andrii.Borysenko\source\repos\UploadImageAPI\UploadImageAPI.UnitTests\obj\Debug\netcoreapp2.2\UploadImageAPI.UnitTests.dll
 D:\Users\Andrii.Borysenko\source\repos\UploadImageAPI\UploadImageAPI.UnitTests\obj\Debug\netcoreapp2.2\UploadImageAPI.UnitTests.pdb
+D:\Users\Andrii.Borysenko\source\repos\UploadImageAPI\UploadImageAPI.UnitTests\bin\Debug\netcoreapp2.2\Resources\123.png
