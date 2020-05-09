@@ -3,8 +3,6 @@ dist: trusty
 mono: none
 dist: xenial
 dotnet: 2.2
-install:
-- dotnet restore
 script:
-- dotnet build
+- dotnet build 
 - dotnet test UploadImageAPI/Tests/UploadImageAPI.UnitTests.csproj
