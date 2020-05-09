@@ -4,5 +4,4 @@ dotnet: 2.2
 script:
   - dotnet restore
   - dotnet build ./UploadImageAPI/
-  - dotnet build ./UploadImageAPI.UploadImageAPI/
   - dotnet test ./UploadImageAPI.UnitTests/
