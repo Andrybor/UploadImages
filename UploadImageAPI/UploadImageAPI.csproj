@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <UserSecretsId>7bc9b707-de04-4e15-a163-cd64ffb81c39</UserSecretsId>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.0.2105168" />
+    <PackageReference Include="System.Drawing.Common" Version="5.0.0-preview.3.20214.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+
+</Project>
