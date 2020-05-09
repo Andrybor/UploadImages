@@ -1,7 +1,9 @@
-sudo: false
-language: node_js
-node_js:
-  - 'node'
-  - '6'
-  - '5'
-  - '4'
+language: csharp
+dist: trusty
+mono: none
+dotnet: 1.0.1
+install:
+- dotnet restore
+script:
+- dotnet build
+- dotnet test UploadImageAPI/Tests/UploadImageAPI.UnitTests.csproj
