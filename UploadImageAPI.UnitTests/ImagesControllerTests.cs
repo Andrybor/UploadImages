@@ -20,7 +20,7 @@ namespace UploadImageAPI.UnitTests
             var imageWriter = new ImageWriter();
             var imageService = new UploadImageService(imageWriter);
             var controller = new ImagesController(imageService);
-            string path = Directory.GetCurrentDirectory() + @"/Resources/test.png";
+            var path = Directory.GetCurrentDirectory() + @"/Resources/test.png";
             IActionResult result;
 
             // act

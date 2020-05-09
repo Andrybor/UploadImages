@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using UploadImageAPI.Extensions;
@@ -23,7 +24,7 @@ namespace UploadImageAPI.Controllers
         [HttpPost("UploadImage")]
         public async Task<IActionResult> UploadImage([FromForm] IFormCollection collection)
         {
-            var workingDirectory = Environment.CurrentDirectory;
+            var workingDirectory = Directory.GetCurrentDirectory();
             var projectDirectory = Directory.GetParent(workingDirectory)?.Parent?.Parent?.Parent?.FullName + @"/UploadImageAPI/Images";
 
             var uploadedFiles = collection.Files;
