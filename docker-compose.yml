@@ -1,8 +1,0 @@
-version: '3.4'
-
-services:
-  uploadimageapi:
-    image: ${DOCKER_REGISTRY-}uploadimageapi
-    build:
-      context: .
-      dockerfile: UploadImageAPI\Dockerfile

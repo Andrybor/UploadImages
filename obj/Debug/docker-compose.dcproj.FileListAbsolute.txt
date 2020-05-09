@@ -1,5 +1,0 @@
-D:\Users\Andrii.Borysenko\source\repos\UploadImageAPI\bin\Debug\UploadImageAPI.dll
-D:\Users\Andrii.Borysenko\source\repos\UploadImageAPI\bin\Debug\UploadImageAPI.pdb
-D:\Users\Andrii.Borysenko\source\repos\UploadImageAPI\obj\Debug\docker-compose.dcprojAssemblyReference.cache
-D:\Users\Andrii.Borysenko\source\repos\UploadImageAPI\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
-D:\Users\Andrii.Borysenko\source\repos\UploadImageAPI\obj\Debug\docker-compose.dcproj.CopyComplete

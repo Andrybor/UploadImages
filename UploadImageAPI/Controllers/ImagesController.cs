@@ -24,12 +24,14 @@ namespace UploadImageAPI.Controllers
         [HttpPost("UploadImage")]
         public async Task<IActionResult> UploadImage([FromForm] IFormCollection collection)
         {
-            var path = Path.GetFullPath(@"..\..\..\..\");
+            var workingDirectory = Directory.GetCurrentDirectory();
+            var projectDirectory = Directory.GetParent(workingDirectory)?.Parent?.Parent?.Parent?.FullName + @"/UploadImageAPI/Images";
+
             var uploadedFiles = collection.Files;
             if (uploadedFiles.Count > 0)
             {
                 var isSucceed = await uploadedFiles.ToList()
-                    .ForEachAsync(async i => await _imageService.UploadImage(i, path));
+                    .ForEachAsync(async i => await _imageService.UploadImage(i, projectDirectory));
                 return Ok(isSucceed);
             }
 
