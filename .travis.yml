@@ -1,11 +1,7 @@
-language: csharp
-mono: none
-dotnet: 2.0.0
-os: windows
-
-install:
-- dotnet restore
-
-script:
- - dotnet build
- - dotnet test ./UploadImageAPI/Tests/UploadImageAPI.UnitTests.csproj
+sudo: false
+language: node_js
+node_js:
+  - 'node'
+  - '6'
+  - '5'
+  - '4'
